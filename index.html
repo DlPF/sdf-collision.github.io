@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real-time Collision Detection between General SDFs</title>
+    <!-- Bootstrap -->
+    <link href="./static/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- <link rel="stylesheet" href="./static/css/fontawesome.all.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+
+  <!-- cover -->
+  <body><section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2> Real-time Collision Detection between General SDFs</h2>
+            <h4 style="color:#5a6268;">GMP 2024 (Best Paper Award)</h4>
+            <hr>
+            <h6>
+                Pengfei Liu</a><sup>1*</sup>,
+                <a href="https://zzzyuqing.github.io/" target="_blank">Yuqing Zhang</a><sup>1*</sup>,
+                <a href="https://drhewang.com/" target="_blank">He Wang</a><sup>2</sup>,
+                Milo K. Yip<sup>3</sup>,
+                Elvis S. Liu<sup>3</sup>,
+                <a href="http://www.cad.zju.edu.cn/home/jin/" target="_blank">Xiaogang Jin</a><sup>1†</sup></h6>
+            <p>
+                <sup>1</sup>State Key Lab of CAD&CG, Zhejiang University &nbsp;&nbsp;
+                <sup>2</sup>University of Leeds&nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>3</sup>MoreFun Studios, Tencent Games&nbsp;&nbsp;&nbsp;&nbsp;
+                <br>
+                <sup>*</sup>The first two authors contribute equally. &nbsp;&nbsp;
+                <sup>†</sup>Corresponding authors. &nbsp;&nbsp;
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="./static/resouces/Real_Time_CD_between_SDFs.pdf" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="./static/videos/Real-Time-Collision Detection Between General SDFs.mp4" role="button" target="_blank">
+                  <i class="fab fa-youtube"></i> Video </a> </p>
+            </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="./static/resouces/slides.pdf" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Slides </a> </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+            <div class="row" style="margin-bottom:5px">
+              <div class="col" style="text-align:center">
+                <img class="thumbnail" src="./static/images/teaser.jpg" style="width:100%; margin-bottom:20px">
+              </div>
+
+            </div>
+			<br>
+
+          <p class="text-left">
+            Signed Distance Fields (SDFs) have found widespread utility in collision detection applications due to their superior query efficiency and ability to represent continuous geometries. However, little attention has been paid to calculating the intersection of two arbitrary SDFs. In this paper, we propose a novel, accurate, and real-time approach for SDF-based collision detection between two solids, both represented as SDFs. Our primary strategy entails using interval calculations and the SDF gradient to guide the search for intersection points within the geometry. For ar-bitrary objects, we take inspiration from existing collision detection pipelines and segment the two SDFs into multiple parts with bounding volumes. Once potential collisions between two parts are identified, our method quickly computes comprehensive intersection information such as penetration depth, contact points, and contact normals. Our method is general in that it accepts both continuous and discrete SDF representations. Experiment results show that our method can detect collisions in high-precision models in real time, highlighting its potential for a wide range of applications in computer graphics and virtual reality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>
+              @article{liu2024real,
+                title={Real-time collision detection between general SDFs},
+                author={Liu, Pengfei and Zhang, Yuqing and Wang, He and Yip, Milo K and Liu, Elvis S and Jin, Xiaogang},
+                journal={Computer Aided Geometric Design},
+                volume={111},
+                pages={102305},
+                year={2024},
+                publisher={Elsevier}
+              }</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body></html>
